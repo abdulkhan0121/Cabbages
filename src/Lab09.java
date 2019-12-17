@@ -101,51 +101,51 @@ public class Lab09 {
 	    } 
 			}
 	
-	public static void grep() {
+// 	public static void grep() {
 		
 		
-		String pathname = "Cabbages.txt";
-	    File file = new File(pathname);
-	    String sub = "";
-		Scanner input = null;
-		boolean found = false;
-		try
-		    {
-		        input = new Scanner(file);
-				int lineNumber = 1;
-		        Scanner take = new Scanner(System.in);
-		        System.out.println("Please enter something to grep: ");
-		        String searchFor = take.next();
-		        int length = searchFor.length();
-		        while(input.hasNextLine()) 
-		        {
-		        	String line = input.nextLine();
-		        	for(int i = 0; i < line.length() - (length+1); i ++) {
+// 		String pathname = "Cabbages.txt";
+// 	    File file = new File(pathname);
+// 	    String sub = "";
+// 		Scanner input = null;
+// 		boolean found = false;
+// 		try
+// 		    {
+// 		        input = new Scanner(file);
+// 				int lineNumber = 1;
+// 		        Scanner take = new Scanner(System.in);
+// 		        System.out.println("Please enter something to grep: ");
+// 		        String searchFor = take.next();
+// 		        int length = searchFor.length();
+// 		        while(input.hasNextLine()) 
+// 		        {
+// 		        	String line = input.nextLine();
+// 		        	for(int i = 0; i < line.length() - (length+1); i ++) {
 		        		
-		        		sub = line.substring(i, length+i);
-		        		if(sub.equals(searchFor)) {
+// 		        		sub = line.substring(i, length+i);
+// 		        		if(sub.equals(searchFor)) {
 		        			
-		        			String first = line.substring(0,i);
-		        			String middle = line.substring(i, length+i);
-		        			String last = line.substring(length+i, line.length());
-							System.out.println("Line " + lineNumber + ": " + first + "<" + middle + ">" + last);
-							found = true;
-		        		}
-		        	}
-		        	lineNumber++;
-		        }
-		        if(found == false) {
-		        	System.out.println("Your phrase was not found.");
-		        }
-		    }
-		    catch (FileNotFoundException ex)
-		    {
-		        System.out.println("*** Cannot open " + pathname + " ***");
-		        System.exit(1);  // quit the program
-		    } 
-	}
+// 		        			String first = line.substring(0,i);
+// 		        			String middle = line.substring(i, length+i);
+// 		        			String last = line.substring(length+i, line.length());
+// 							System.out.println("Line " + lineNumber + ": " + first + "<" + middle + ">" + last);
+// 							found = true;
+// 		        		}
+// 		        	}
+// 		        	lineNumber++;
+// 		        }
+// 		        if(found == false) {
+// 		        	System.out.println("Your phrase was not found.");
+// 		        }
+// 		    }
+// 		    catch (FileNotFoundException ex)
+// 		    {
+// 		        System.out.println("*** Cannot open " + pathname + " ***");
+// 		        System.exit(1);  // quit the program
+// 		    } 
+// 	}
 	
-				}
+// 				}
 
 
 
